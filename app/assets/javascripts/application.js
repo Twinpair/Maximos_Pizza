@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require skel.min
+//= require maximos_pizza/maximos_pizza.js
+//= require init.js
 //= require_tree .

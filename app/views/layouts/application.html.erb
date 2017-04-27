@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MaximosPizza</title>
+    <title>Maximo's Pizza</title>
+
+    <!-- Metadata-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Maximos pizza is your local los angeles pizzaria" />
+    <meta name="keywords" content="pizza, food, delivery, online, calzones, wings, los angeles, local" />
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Favicons -->
+    <%= favicon_link_tag 'favicon.ico' %>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="android-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+    <%= stylesheet_link_tag    'style' %>
+    <%= stylesheet_link_tag    'bootstrap.min' %>
+    <%= stylesheet_link_tag    'font-awesome.min' %>
   </head>
 
-  <body>
+  <body id="header">
     <%= yield %>
   </body>
+
+
+  <!-- jQuery Library -->
+  <%= javascript_include_tag 'jquery.min.js' %>
+
+  <!-- Bootstrap Library -->
+  <%= javascript_include_tag 'bootstrap.min.js' %>
+
+   <!-- Custom Theme JavaScript -->
+  <%= javascript_include_tag 'navbar-prop.js' %>
+  <%= javascript_include_tag 'skel.min.js' %>
+  <%= javascript_include_tag 'init.js' %>
+
+  <!-- Google Map -->
+  <script src="https://maps.google.com/maps/api/js?key=AIzaSyB7sSXYTLLXePlYSx-Rorct3syKffiuI3s"></script>
+  <%= javascript_include_tag 'map_div.js' %>
 </html>
