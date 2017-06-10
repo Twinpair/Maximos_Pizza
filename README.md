@@ -1,4 +1,4 @@
-# Maximos
+# Maximos Pizza
 
 This is the repository for Maximo's Pizza business website. You can visit the site by navigating to http://maximospizza.herokuapp.com
 
